@@ -27,8 +27,11 @@ const items = [
     key: "3",
   },
 ];
+interface MainPageProps {
+  title:string;
+}
 
-const MainPage = () => {
+const MainPage = (props: MainPageProps) => {
   return (
     <Container>
       <UncontrolledCarousel items={items} />
